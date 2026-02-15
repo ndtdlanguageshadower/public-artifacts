@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Help – NDTD Language Shadower</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font: -apple-system-body, "Helvetica Neue", sans-serif;
+      color: #000;
+      background: #f2f2f7;
+      margin: 0;
+      padding: 16px;
+      line-height: 1.4;
+    }
+    .header {
+      background: rgba(52, 199, 89, 0.15);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0 0 8px 0;
+      color: #000;
+    }
+    .header p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0;
+    }
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 12px 0;
+      color: #000;
+    }
+    .bullet {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      align-items: flex-start;
+    }
+    .bullet:last-child { margin-bottom: 0; }
+    .bullet-icon {
+      color: #34C759;
+      font-size: 1rem;
+      width: 22px;
+      flex-shrink: 0;
+      text-align: center;
+    }
+    .bullet-text strong { display: block; font-size: 0.9rem; margin-bottom: 2px; }
+    .bullet-text span { font-size: 0.8rem; color: #666; }
+    .contact-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 16px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .contact-box p { margin: 0 0 4px 0; font-size: 0.9rem; }
+    .contact-box .label { font-size: 0.75rem; color: #666; margin-bottom: 2px; }
+    .contact-box a { color: #34C759; text-decoration: none; font-size: 0.85rem; }
+    .contact-box a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>NDTD Language Shadower</h1>
+    <p>Language shadowing player and practice tool. Import media from your device, Google Drive, OneDrive, or URLs; scan book pages to create audio with subtitles; or use auto-generated audio from topics. Practice with play ranges, bookmarks, and voice recordings.</p>
+  </div>
+
+  <div class="section">
+    <h2>Import Media</h2>
+    <div class="bullet">
+      <span class="bullet-icon">📁</span>
+      <div class="bullet-text">
+        <strong>Device files</strong>
+        <span>Import media (video, audio) and subtitles from your device. Supports .mp4, .mp3, .wav, and .srt.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">▷</span>
+      <div class="bullet-text">
+        <strong>Google Drive</strong>
+        <span>Connect your account to browse and import files. Read-only access; we only download files you choose. Tokens stay on your device.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">☁</span>
+      <div class="bullet-text">
+        <strong>OneDrive</strong>
+        <span>Connect your account to browse and import files. We only download files you choose. Tokens stay on your device.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">⎋</span>
+      <div class="bullet-text">
+        <strong>URLs</strong>
+        <span>Paste a share link (Google Drive, OneDrive, Dropbox, or direct .mp4/.mp3 URL) to stream or download for offline playback.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">◫</span>
+      <div class="bullet-text">
+        <strong>Scan</strong>
+        <span>Scan a book page with the camera. Text is extracted (OCR) and converted to audio with subtitles for shadowing. Processed on your device.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">✦</span>
+      <div class="bullet-text">
+        <strong>Auto Generate</strong>
+        <span>Pick a topic (e.g., job interview, daily routines, travel). Audio and subtitles are generated for listening and shadowing practice. For personal learning use.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">💬</span>
+      <div class="bullet-text">
+        <strong>Subtitles</strong>
+        <span>Import .srt files and select them in the player to read along while listening.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Media List</h2>
+    <div class="bullet">
+      <span class="bullet-icon">👆</span>
+      <div class="bullet-text">
+        <strong>Open player</strong>
+        <span>Tap a file to open it (does not auto-play).</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">▶</span>
+      <div class="bullet-text">
+        <strong>Quick play</strong>
+        <span>Tap the play icon to open and start playing.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">✎</span>
+      <div class="bullet-text">
+        <strong>Rename</strong>
+        <span>Double-tap a file row to rename.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">⋯</span>
+      <div class="bullet-text">
+        <strong>More actions</strong>
+        <span>Long-press a file to see the context menu (rename, create play range, delete recordings/bookmarks).</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Play Ranges</h2>
+    <div class="bullet">
+      <span class="bullet-icon">↻</span>
+      <div class="bullet-text">
+        <strong>Create</strong>
+        <span>Long-press a file → Create Play Range. Choose From/To, Loop, and an optional description.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">☰</span>
+      <div class="bullet-text">
+        <strong>Manage</strong>
+        <span>Home → Play Ranges list. Edit or delete using the icons on the right.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">👆</span>
+      <div class="bullet-text">
+        <strong>Open without playing</strong>
+        <span>Tap a play range item to open the player with the range applied (won’t auto-play).</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">▶</span>
+      <div class="bullet-text">
+        <strong>Play now</strong>
+        <span>Tap the play icon to open the player and start playing with that range.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Player</h2>
+    <div class="bullet">
+      <span class="bullet-icon">⏯</span>
+      <div class="bullet-text">
+        <strong>Play / Pause</strong>
+        <span>Use the big play button to control playback.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">↻</span>
+      <div class="bullet-text">
+        <strong>Play Range + Loop</strong>
+        <span>Enable Play Range to constrain playback; enable Loop to repeat within the range.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">⚡</span>
+      <div class="bullet-text">
+        <strong>Speed</strong>
+        <span>Choose playback speed (0.5× to 2×). Play with subtitles for shadowing.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">🔖</span>
+      <div class="bullet-text">
+        <strong>Bookmarks</strong>
+        <span>Save important moments and jump back to them later.</span>
+      </div>
+    </div>
+    <div class="bullet">
+      <span class="bullet-icon">🎤</span>
+      <div class="bullet-text">
+        <strong>Recordings</strong>
+        <span>Record your voice to practice shadowing. Recordings stay on your device.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Clean Up</h2>
+    <div class="bullet">
+      <span class="bullet-icon">🧹</span>
+      <div class="bullet-text">
+        <strong>Free up space</strong>
+        <span>Use Clean Up to remove recordings, bookmarks, or all media.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <p><strong>Need help or have feedback?</strong></p>
+    <p class="label">Email us:</p>
+    <p><a href="mailto:ndtd.language.shadower@gmail.com?subject=Help%20%2F%20Feedback">ndtd.language.shadower@gmail.com</a></p>
+  </div>
+
+</body>
+</html>
