@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy - NDTD Language Shadower</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 24px;
+        max-width: 900px;
+      }
+      h1, h2 { margin: 0 0 12px; }
+      h2 { margin-top: 24px; font-size: 1.1rem; }
+      .meta { color: #6b7280; font-size: 0.95rem; margin-bottom: 16px; }
+      .section { margin-bottom: 16px; }
+      pre {
+        background: rgba(127, 127, 127, 0.08);
+        padding: 12px;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Version: 3.0 &middot; Last Updated: February 23, 2026</div>
+
+    <div class="section">
+      <h2>Information We Collect</h2>
+      <p>
+        NDTD Language Shadower operates primarily on your device. Your media files, recordings,
+        bookmarks, and notes are stored locally and are never sent to our servers.
+      </p>
+      <p>
+        Auto Generate: When you use this feature, the app sends the topic you select (e.g.,
+        "job interview"), an App Attest assertion, and device security signals to our backend
+        to generate audio.
+      </p>
+      <p>
+        We do not collect your name, email, contacts, photos, or precise location, and we do
+        not use third‑party analytics or advertising.
+      </p>
+      <p>
+        For security and purchase verification, we may process: App Attest key ID, App Attest receipt
+        and risk metric, purchase transaction claim IDs, and IP address for rate limiting.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>How We Use Your Information</h2>
+      <p>We use App Attest signals to prevent abuse and enforce free‑use limits for Auto Generate.</p>
+      <p>We use purchase transaction claim IDs to verify paid generations.</p>
+      <p>We use IP address for rate limiting and service protection.</p>
+      <p>
+        Imported files, voice recordings, bookmarks, scan results, and study notes remain on your
+        device for your personal language learning practice.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Data Storage</h2>
+      <p>
+        All data—imported media, voice recordings, bookmarks, notes, and scan-generated audio—is
+        stored locally using iOS storage (UserDefaults, Documents directory, Keychain).
+      </p>
+      <p>
+        Google Drive and OneDrive: If you connect these accounts, OAuth tokens are stored securely
+        in your device Keychain. We do not receive or store these tokens on our servers.
+      </p>
+      <p>
+        Backend storage (limited): App Attest key ID, App Attest receipt and risk metric, and purchase
+        transaction claim IDs are stored to prevent fraud and verify purchases.
+      </p>
+      <p>
+        Data retention: We retain security and transaction records only as long as needed for
+        fraud prevention, accounting, and legal requirements. You may request deletion by contacting us.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Data Flow Diagram (Simplified)</h2>
+      <pre>
+You
+ └─ App (on device)
+     ├─ Local files/recordings/notes (stay on device)
+     ├─ OAuth to Google/Microsoft (direct, tokens stored in Keychain)
+     └─ Auto Generate request
+         ├─ Topic ID + App Attest assertion → Backend
+         ├─ Backend → Service provider (script + audio generation)
+         └─ Backend → App (audio + optional subtitles)
+
+Backend stores (limited):
+- App Attest key ID + receipt + risk metric
+- Purchase transaction claim ID
+- Rate-limit counters (may include IP)
+      </pre>
+    </div>
+
+    <div class="section">
+      <h2>Permissions</h2>
+      <p>• Microphone: Used only to record your voice practice sessions. Recordings are stored locally.</p>
+      <p>• File Access: Used to import media and subtitle files from your device or cloud providers for local playback.</p>
+      <p>• Camera: Used only when you use Scan to capture book pages. Images are processed on your device (OCR and speech synthesis); they are not sent to our servers.</p>
+    </div>
+
+    <div class="section">
+      <h2>Third-Party Services</h2>
+      <p>This app does not use third-party analytics, advertising, or tracking.</p>
+      <p>
+        URLs &amp; Cloud: The app connects to user-provided URLs (Google Drive, OneDrive, Dropbox, or
+        direct links) when you stream or download. For Google Drive and OneDrive sign-in, the app
+        uses OAuth and connects directly to Google/Microsoft—we do not receive your credentials or
+        file content.
+      </p>
+      <p>
+        Auto Generate: Uses our backend service to produce audio from the topic you select. We may
+        process limited security signals (App Attest) and purchase transaction IDs.
+      </p>
+      <p>Our backend uses third-party service providers to generate scripts and speech audio based on your selected topic.</p>
+    </div>
+
+    <div class="section">
+      <h2>Children's Privacy</h2>
+      <p>
+        Our app does not knowingly collect any information from children. Since we do not collect any
+        personal information, this policy applies to all users regardless of age.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. We will notify you of any changes by
+        posting the new Privacy Policy and updating the "Last Updated" date.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+      <p><a href="mailto:ndtd.language.shadower@gmail.com">ndtd.language.shadower@gmail.com</a></p>
+    </div>
+  </body>
+</html>
+
