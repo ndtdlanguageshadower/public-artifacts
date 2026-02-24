@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Help - NDTD Language Shadower</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 24px;
+        max-width: 900px;
+      }
+      h1, h2 { margin: 0 0 12px; }
+      h2 { margin-top: 24px; font-size: 1.1rem; }
+      .meta { color: #6b7280; font-size: 0.95rem; margin-bottom: 16px; }
+      .section { margin-bottom: 16px; }
+      a { color: #0a84ff; }
+      ul { padding-left: 1.5em; margin: 0.5em 0; }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        background: rgba(127, 127, 127, 0.10);
+        padding: 0 6px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Help</h1>
+    <div class="meta">Version: 3.0 &middot; Last Updated: February 23, 2026</div>
+
+    <div class="section">
+      <h2>Getting started</h2>
+      <ul>
+        <li><strong>Import media</strong> (audio/video + subtitles) and practice shadowing with playback controls.</li>
+        <li><strong>Scan</strong> a page to create an audio track with subtitles (on-device OCR + speech synthesis).</li>
+        <li><strong>Auto Generate</strong> to download practice audio from a topic (availability may depend on free-use limits and optional purchases).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Importing media</h2>
+      <p>You can import from:</p>
+      <ul>
+        <li><strong>Files on your device</strong> (Files app, local storage)</li>
+        <li><strong>Google Drive / OneDrive</strong> (sign in to browse and download files you choose)</li>
+        <li><strong>URLs</strong> (examples: Dropbox share links, direct file links)</li>
+      </ul>
+      <p>
+        After importing, the app stores the file locally so you can play it offline. Subtitles are matched by name:
+        if you import <code>MyVideo.mp4</code>, the app will look for <code>MyVideo.srt</code>.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Subtitles (SRT)</h2>
+      <ul>
+        <li>Preferred format: <strong>SRT (.srt)</strong></li>
+        <li>If subtitles are not showing, confirm the SRT file is valid and timecodes look like <code>00:00:01,000</code>.</li>
+        <li>If you imported a subtitle but it doesn’t match, try renaming it to match the media filename.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Playback tips</h2>
+      <ul>
+        <li><strong>Speed control</strong>: slow down to improve accuracy, then increase gradually.</li>
+        <li><strong>Bookmarks</strong>: save difficult sections and repeat them daily.</li>
+        <li><strong>Background audio</strong>: the app supports background playback for listening practice.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Recording your voice (Microphone)</h2>
+      <p>
+        If the app asks for microphone access, it’s needed only to record your shadowing practice.
+        Your recordings are saved on your device.
+      </p>
+      <p>
+        If recording fails, check:
+      </p>
+      <ul>
+        <li>iOS Settings → Privacy &amp; Security → Microphone → enable NDTD Language Shadower</li>
+        <li>Bluetooth headset permissions / connection</li>
+        <li>Silent mode / volume settings</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Karaoke Shadow (record mode)</h2>
+      <p>
+        Karaoke Shadow can optionally record a session (screen + microphone) so you can share your practice.
+        When recording is enabled, iOS may show a system recording indicator.
+      </p>
+      <p>
+        The recorded file is saved inside the app and can be shared using the iOS share sheet.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Scan (Camera)</h2>
+      <p>
+        Scan uses the camera to capture a page and extracts text on-device. The captured image is processed on your device
+        and is not uploaded to our servers.
+      </p>
+      <p>
+        If camera access is denied, enable it in iOS Settings → Privacy &amp; Security → Camera.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Auto Generate</h2>
+      <p>
+        Auto Generate downloads practice audio based on a topic you choose. The app contacts our backend to generate and deliver the audio.
+        To reduce abuse, Auto Generate may enforce free-use limits and may require a one-time purchase for additional generations.
+      </p>
+      <p>
+        If Auto Generate is not working, check:
+      </p>
+      <ul>
+        <li>Network connection (try disabling VPN)</li>
+        <li>If you recently installed the app on a new device, try again after a few minutes</li>
+        <li>If you purchased but it still shows locked, wait for the App Store purchase to complete and try again</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>In-app purchases (tips / unlocks)</h2>
+      <p>
+        Purchases are handled by Apple. If the purchase sheet does not appear or takes too long:
+      </p>
+      <ul>
+        <li>Check Screen Time restrictions (In-app Purchases)</li>
+        <li>Check network/VPN</li>
+        <li>Try again later</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Privacy &amp; legal</h2>
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a><br />
+        <a href="terms-of-service.html">Terms of Service</a>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>
+        If you need help, email us at
+        <a href="mailto:ndtd.language.shadower@gmail.com">ndtd.language.shadower@gmail.com</a>.
+      </p>
+    </div>
+  </body>
+</html>
+
