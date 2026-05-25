@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Help - NDTD Language Shadower</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 24px;
+        max-width: 900px;
+      }
+      h1, h2 { margin: 0 0 12px; }
+      h2 { margin-top: 24px; font-size: 1.1rem; }
+      .meta { color: #6b7280; font-size: 0.95rem; margin-bottom: 16px; }
+      .section { margin-bottom: 16px; }
+      a { color: #0a84ff; }
+      ul { padding-left: 1.5em; margin: 0.5em 0; }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        background: rgba(127, 127, 127, 0.10);
+        padding: 0 6px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Help</h1>
+    <div class="meta">Version 4.1 &middot; Last updated: May 10, 2026</div>
+
+    <div class="section">
+      <h2>Three main tabs</h2>
+      <p>Use the bar at the bottom to switch modes.</p>
+      <ul>
+        <li><strong>Shadower</strong>: your library. Import or create media, open the player, and manage play ranges.</li>
+        <li><strong>Karaoke Shadow</strong>: practice line by line with moving subtitles. You can add screen and microphone recording on some sessions.</li>
+        <li><strong>R1200D</strong>: short repeat drills from your own subtitle files, with optional pronunciation scoring.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Top of the screen</h2>
+      <p>Along the top you will usually see the app logo and name, a <strong>Credit</strong> button, and a <strong>Support</strong> (heart) button.</p>
+      <ul>
+        <li>Tap the <strong>logo / title</strong> to open a small menu: <strong>Help</strong> (this guide), <strong>Terms of Use</strong>, and <strong>Privacy Policy</strong>.</li>
+        <li>Tap <strong>Credit</strong> to see your balance, buy credit packs, or enter a <strong>redeem code</strong> if you have one.</li>
+        <li>Tap <strong>Support</strong> to send thanks or ask a question. Tips there are optional and separate from credits.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Credits (one balance for paid actions)</h2>
+      <p>
+        Many paid actions draw from the same credit balance. Exactly which features cost credits, and how many, can change over time; the app shows the cost before you confirm when a feature uses credits.
+      </p>
+      <ul>
+        <li><strong>Pronunciation assessment (R1200D)</strong> typically uses one credit per scored clip when scoring is not in a free promo.</li>
+        <li><strong>Auto Generate, Scan, Text, and Books</strong> may charge credits per generation when your server configuration enables that.</li>
+        <li><strong>Karaoke Shadow with recording</strong> can charge several credits per finished recording when recording is turned on.</li>
+      </ul>
+      <p>
+        New installs may receive starter credits once (when the service offers them). Limited-time free promos can make some or all credit charges zero until the promo ends. Purchases and tips go through Apple; we do not see your card number.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Creating practice audio</h2>
+      <p>On the Shadower home screen, open <strong>Import Media</strong> and pick a source:</p>
+      <ul>
+        <li><strong>Auto Generate</strong>: choose a fixed topic. The app talks to our servers to build audio (and usually subtitles). You may need credits or a free allowance depending on setup.</li>
+        <li><strong>Scan</strong>: take a photo of a printed page. Text is read on the device; only the extracted text is sent to our servers to create audio. Photos themselves are not uploaded.</li>
+        <li><strong>Text</strong>: paste or type a short passage (about a minute and a half of audio at most). The text is sent to our servers for speech synthesis.</li>
+        <li><strong>Books</strong>: read public-domain books online or open your own PDF, select text, then generate audio from that text on our servers.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Importing files you already have</h2>
+      <p>You can add media from:</p>
+      <ul>
+        <li><strong>Files on this device</strong> (common types such as MP4, MP3, WAV, plus SRT subtitles)</li>
+        <li><strong>Google Drive or OneDrive</strong> after you sign in (only files you pick are downloaded)</li>
+        <li><strong>URLs</strong> (share links or direct links to stream or download)</li>
+      </ul>
+      <p>
+        After a download or import, the file is stored locally so playback works offline when the file is on disk. Subtitles match best when the SRT name matches the media name, for example <code>Lesson.mp4</code> with <code>Lesson.srt</code>.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Your library list</h2>
+      <ul>
+        <li>Tap a row to open the player without starting playback.</li>
+        <li>Tap the play icon on a row to open and start playing.</li>
+        <li>Double-tap a row to rename.</li>
+        <li>Long-press for more actions (including creating a play range where supported).</li>
+        <li>Use category chips and search to narrow long lists.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Subtitles (SRT)</h2>
+      <ul>
+        <li>Preferred format: <strong>.srt</strong></li>
+        <li>If cues look wrong, check that timecodes use the usual pattern, for example <code>00:00:01,000</code>.</li>
+        <li><strong>Translate</strong> in the subtitle screen uses Apple on-device translation when you ask for a full-text translation.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Playback (Shadower player)</h2>
+      <ul>
+        <li><strong>Speed</strong>: slow down, then speed up as you improve.</li>
+        <li><strong>Bookmarks</strong>: mark spots to revisit.</li>
+        <li><strong>Play Range and Loop</strong>: limit playback to a window and optionally loop inside it. Forward and back nudges help move the window.</li>
+        <li><strong>Background audio</strong>: listening continues when you leave the app if iOS allows it for that session.</li>
+        <li><strong>Voice recordings</strong>: practice clips stay on the device unless you use a feature that uploads audio for scoring (see R1200D).</li>
+      </ul>
+      <p>To start a saved range from the home screen, long-press a file and choose the play range option when it appears.</p>
+    </div>
+
+    <div class="section">
+      <h2>Microphone issues</h2>
+      <p>The microphone is used for practice recording and for assessment where you record yourself.</p>
+      <ul>
+        <li>Settings, then Privacy and Security, then Microphone, then turn on NDTD Language Shadower</li>
+        <li>Check Bluetooth routing and volume.</li>
+        <li>Screen Time can block in-app purchases or certain system sheets; check restrictions if a purchase never appears.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Karaoke Shadow</h2>
+      <p>
+        Follow subtitles in time with the reference audio. Optional recording captures the screen and your voice so you can review or share. iOS shows its usual recording indicator while capture runs.
+      </p>
+      <p>
+        When recording is enabled and credits apply, finishing a recording spends credits according to the current rules shown in the app. Creation shortcuts in this tab can send you to Auto Generate, Scan, or Text when you need new subtitles.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>R1200D</h2>
+      <p>
+        Builds short practice loops from subtitle files you already imported. You can record yourself, hear the reference line, and run pronunciation assessment when you have credits or a free window.
+      </p>
+      <ul>
+        <li><strong>Translate</strong> for a line uses on-device translation.</li>
+        <li><strong>Assessment</strong> sends that take and the written line to our systems for scoring; scores return to the phone.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Camera (Scan)</h2>
+      <p>
+        Grant camera access under Settings, Privacy and Security, Camera, if Scan cannot start. OCR runs on the device; only text goes out for audio creation, as described above.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Freeing storage</h2>
+      <p>
+        If your Shadower screen shows a navigation bar with an info menu, open it and choose <strong>Clean Up</strong> to remove recordings, bookmarks, or all imported media in one step. If you do not see that menu, delete files from the list or remove recordings inside the player.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Privacy and terms</h2>
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a><br />
+        <a href="terms-of-service.html">Terms of Service</a>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>
+        Questions or feedback:
+        <a href="mailto:ndtd.language.shadower@gmail.com">ndtd.language.shadower@gmail.com</a>
+      </p>
+    </div>
+  </body>
+</html>
